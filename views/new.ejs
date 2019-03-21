@@ -1,0 +1,26 @@
+<% include partials/header %>
+<div id='colorbg' class='ui main text container segment'>
+	<div id='headform' class='ui large header segment'>New Blog</div>
+  
+  <form class='ui form' action='/blogs' method='POST'> 
+  <div class='field'>
+  	<label id='fontcol'>Title:</label>	
+  	<input type='text' placeholder="Title" name='blog[title]'>
+  </div>
+  <div class='field'>
+  	<label id='fontcol'>Image:</label>
+  	<input type='text' placeholder="Image URL" name='blog[image]'>
+  </div>
+ 
+  <div class='field'>
+  	<label id='fontcol'>Your Blog Content:</label>
+  	<textarea placeholder='Enter the text' name='blog[body]'></textarea>
+  </div>
+  <div class='field'>
+  	<label id='fontcol'>Writer:</label>
+  	<input type='text' placeholder="Writer's Name" name='blog[writer]'>
+  </div>
+  	<button class='ui purple inverted big button'>Submit</button>
+  </form>
+</div>
+<% include partials/footer %>

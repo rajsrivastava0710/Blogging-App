@@ -1,0 +1,40 @@
+<% include partials/header %>
+<div id='raj' class='ui main text container'>
+<div id='downmargin' class='ui huge header centered'><u>Top BLOGS by Mr.Blogger</u></div>
+<div class='ui top attached '>
+	<div class='ui divided items'>
+		<% blogs.forEach(function(blog){ %>
+		<div class='item'>
+			<div class='image'>
+				<img src="<%= blog.image %>">
+			</div>
+			<div class='content'>
+				<a id='bloghead' class='header' href='/blogs/<%= blog._id %>'>
+					<%= blog.title %> <span id='textby'>by</span> <%=blog.writer %></a>
+				<div class='meta'>
+					<span id='mydate'><i><%= blog.created.toDateString() %></i></span>
+				</div>
+				<div class='description'>
+			<p>
+				<% if (typeof (blog.body) === 'undefined' ) { %>
+            	<p> no content</p>  
+        		<% } else { %>
+            	<p> <%- blog.body.substring(0, 70) %>...</p>  
+ 				<% } %>
+ 				</p>			
+			    </div>
+
+			    <div class='button extra'>
+			    	<a class='ui inverted purple button visible content' href='/blogs/<%= blog._id %>'>Read More
+			   	<div id='del'class='hidden content'>
+			    	<i class='right arrow small icon'></i>
+			    </div>
+			    	</a>	
+			</div>
+		</div>	
+	 </div>
+ <% }); %>
+</div>
+</div>
+</div>
+<% include partials/footer %>

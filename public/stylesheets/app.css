@@ -1,0 +1,120 @@
+body{
+	/*background-color: #cbdebf;*/
+	background:linear-gradient(90deg,#acabdc,#cdedbf);
+}
+/*i.icon{
+	font-size: 2em;
+}*/
+.container.main{
+	margin-top: 7em;
+}
+/*img{
+	width:75%;
+	max-width: 600px;
+}*/
+#sameline{
+	font-size: 1.5rem;
+	margin-left:300px;
+	display: inline;
+}
+img{
+	margin-bottom: 10px;
+}
+img:hover{
+	transform: scale(1.05);
+	margin-bottom: 20px;
+}
+#raj{
+	margin-top: 70px
+}
+.large.header{
+	text-align: center;
+	font-size: 1.4em;
+	color:#234567;
+	text-decoration:blink;
+}
+hr{
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: blue;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+#del{
+	display: inline;
+}
+#downmargin{
+	margin-bottom: 25px;
+	font-size: 3.3rem;
+	font-style: italic;
+	color:#505da5;
+}
+#mydate{
+	color:blue;
+	font-size: 1.1em;
+}
+#fontcol{
+	font-size: 1.2rem;
+	color:#863838;
+}
+#headform{
+	font-size: 2.3rem;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	background-color: #889c9ec2;
+}
+#colorbg{
+	background-color: #edfbf2;
+	margin-top:73px;
+}
+#properpadding{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 1.75em;
+}
+#blogtext{
+	margin-bottom: 8px;
+	margin-top: 5px;
+	font-size:1.4rem;
+}
+#writer{
+	margin-top: 70px
+	/*margin:auto auto;*/
+	font-color:grey;
+}
+#writershowname{
+	color:#4620a7;
+	font-size: 1.4em;
+	font-style: italic;
+}
+#inmiddle{
+	text-align: center;
+	margin-top:200px;
+}
+#msgtext{
+	color:red;
+}
+
+#bloghead{
+color:rgba(197,34,34,0.85);
+font-size:1.9rem;
+}
+#blogshowhead{
+	font-size:2.6em;
+	font-style: italic;
+}
+#textby{
+	color:#27353ca8;
+}

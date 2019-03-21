@@ -1,0 +1,27 @@
+<% include partials/header %>
+<div id='raj' class='ui main text container segment'>
+<div id='blogshowhead' class='ui centered blue huge header'><u><%= blog.title %></u></div>
+<div class='ui top attached '>
+	<div class='item'>
+		<img class='ui centered rounded image' src="<%= blog.image %>">
+		<div class='content'>
+			<i class="calendar check outline icon"></i>
+			<span id='mydate'><%= blog.created.toDateString() %></span>
+		</div>
+		<div id='blogtext' class='description'>
+			<p><%- blog.body %></p>
+		</div>
+		<div class='ui large buttons'>
+		<a href='/blogs/<%= blog._id %>/edit' class='ui blue  button large'>Update</a>
+		<div class='or'></div>
+		<form id='del' method="POST" action='/blogs/<%= blog._id %>?_method=DELETE'>
+			<button class='ui red button large'>Delete</button>
+		</form>
+		</div>
+		<div id='sameline'>
+			<span id='textby'><strong>By<Strong></span>: <span id='writershowname'><%= blog.writer %></span>
+		</div>
+	</div>
+</div>
+</div>
+<% include partials/footer %>

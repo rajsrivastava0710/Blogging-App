@@ -1,0 +1,26 @@
+<% include partials/header %>
+<div id='colorbg' class='ui main text container segment'>
+  <div id='headform' class='ui large header segment'>Edit "<%= blog.title %>"</div>
+  
+  <form class='ui form' action='/blogs/<%= blog._id %>?_method=PUT' method='POST'> 
+  <div class='field'>
+    <label id='fontcol'>Title</label> 
+    <input type='text' placeholder='Update the title!' name='blog[title]'  value="<%= blog.title %>">
+  </div>
+  <div class='field'>
+    <label id='fontcol'>Image</label>
+    <input type='text' placeholder='Update the Image URL!' name='blog[image]' value="<%= blog.image %>">
+  </div>
+  <div class='field'>
+    <label id='fontcol'>Your Blog Content</label>
+    <textarea placeholder='Update the blog content!' name='blog[body]'><%= blog.body %></textarea>
+  </div>
+  <div class='field'>
+    <label id='fontcol'>Writer</label>
+    <input type='text' placeholder='Name of the Writer!' name='blog[writer]' value="<%= blog.writer %>">
+  </div>
+    <button class='ui purple inverted big button'>Submit</button>
+    
+  </form>
+</div>
+<% include partials/footer %>
