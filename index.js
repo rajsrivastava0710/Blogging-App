@@ -125,6 +125,10 @@ app.delete("/blogs/:id",function(req,res){
 	});
 });
 
+app.get("*",function(req,res){
+	res.render("error");
+});
+
 app.listen(3000,function(){
 	console.log("Server started!");
 });
